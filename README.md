@@ -95,14 +95,14 @@ http.createServer(function (req, res) {
 
 #### IncomingMessage Methods and Properties
 
-* destroy()
-* headers        _Returns a key-value pair object containing header names and values_
-* httpVersion    _Returns the HTTP version sent by the client_
-* method         _Returns the request method_
-* rawHeaders     _Returns an array of the request headers_
-* rawTrailers    _Returns an array of the raw request trailer keys and values_
-* setTimeout()   _Calls a specified function after a specified number of milliseconds_
-* statusCode     _Returns the HTTP response status code_
-* socket         _Returns the Socket object for the connection_
-* trailers       _Returns an object containing the trailers_
-* url            _Returns the request URL string_
+* **destroy()**
+* **headers**        _Returns a key-value pair object containing header names and values_
+* **httpVersion**    _Returns the HTTP version sent by the client_
+* **method**         _Returns the request method_
+* **rawHeaders**     _Returns an array of the request headers_
+* **rawTrailers**    _Returns an array of the raw request trailer keys and values_
+* **setTimeout()**   _Calls a specified function after a specified number of milliseconds_
+* **statusCode**     _Returns the HTTP response status code_
+* **socket**         _Returns the Socket object for the connection_
+* **trailers**       _Returns an object containing the trailers_
+* **url**            _Returns the request URL string_
