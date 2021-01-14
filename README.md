@@ -95,14 +95,14 @@ http.createServer(function (req, res) {
 
 #### IncomingMessage Methods and Properties
 
-* destroy()      |	                                                                    | 
-* headers        |Returns a key-value pair object containing header names and values     |
-* httpVersion    |Returns the HTTP version sent by the client                            |
-* method         |Returns the request method                                             |
-* rawHeaders     |Returns an array of the request headers                                |
-* rawTrailers    |Returns an array of the raw request trailer keys and values            |
-* setTimeout()   |Calls a specified function after a specified number of milliseconds    |
-* statusCode     |Returns the HTTP response status code                                  |
-* socket         |Returns the Socket object for the connection                           |
-* trailers       |Returns an object containing the trailers                              |
-* url            |Returns the request URL string                                         |
+* destroy()      _	                                                                    _ 
+* headers        _Returns a key-value pair object containing header names and values     _
+* httpVersion    _Returns the HTTP version sent by the client                            _
+* method         _Returns the request method                                             _
+* rawHeaders     _Returns an array of the request headers                                _
+* rawTrailers    _Returns an array of the raw request trailer keys and values            _
+* setTimeout()   _Calls a specified function after a specified number of milliseconds    _
+* statusCode     _Returns the HTTP response status code                                  _
+* socket         _Returns the Socket object for the connection                           _
+* trailers       _Returns an object containing the trailers                              _
+* url            _Returns the request URL string                                         _
