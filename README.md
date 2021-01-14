@@ -2,7 +2,7 @@
 [Node HTTP Documentación](https://nodejs.org/dist/latest-v14.x/docs/api/http.html#http_http_createserver_options_requestlistener)
 
 ## MÉTODOS DE PETICIÓN HTTP
-_HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente, pero algunas características similares son compartidas por un grupo de ellos: ej. un request method puede ser safe, idempotent, o cacheable._
+HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente, pero algunas características similares son compartidas por un grupo de ellos: ej. un request method puede ser safe, idempotent, o cacheable.
 
 ### VERBOSE
 * **GET:** El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.
@@ -70,16 +70,15 @@ http.createServer(function (req, res) {
 #### IncomingMessage Methods and Properties
 
 * **destroy()**
-* **headers**        _Returns a key-value pair object containing header names and values_
-* **httpVersion**    _Returns the HTTP version sent by the client_
-* **method**         _Returns the request method_
-* **rawHeaders**     _Returns an array of the request headers_
-* **rawTrailers**    _Returns an array of the raw request trailer keys and values_
-* **setTimeout()**   _Calls a specified function after a specified number of milliseconds_
-* **statusCode**     _Returns the HTTP response status code_
-* **socket**         _Returns the Socket object for the connection_
-* **trailers**       _Returns an object containing the trailers_
-* **url**            _Returns the request URL string_
+* **httpVersion**    Returns the HTTP version sent by the client
+* **method**         Returns the request method
+* **rawHeaders**     Returns an array of the request headers
+* **rawTrailers**    Returns an array of the raw request trailer keys and values
+* **setTimeout()**   Calls a specified function after a specified number of milliseconds
+* **statusCode**     Returns the HTTP response status code
+* **socket**         Returns the Socket object for the connection
+* **trailers**       Returns an object containing the trailers
+* **url**            Returns the request URL string
 
 ---
 ⌨️ con ❤️ por [veroxcrown](https://github.com/veroxcrown) 😊
