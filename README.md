@@ -37,6 +37,7 @@ _HTTP define un conjunto de métodos de petición para indicar la acción que se
     El método PATCH  es utilizado para aplicar modificaciones parciales a un recurso.
 
 [Fuente](https://developer.mozilla.org/es/docs/Web/HTTP/Methods)
+
 [Fuente 2](https://www.w3schools.com/nodejs/obj_http_incomingmessage.asp)
 
 ### RUTAS
