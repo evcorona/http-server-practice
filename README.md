@@ -52,3 +52,57 @@ POST /clases
 DELETE /clases
 
 [Recurso](https://insomnia.rest/)
+
+## [Node.js http.createServer() Method](https://www.w3schools.com/nodejs/met_http_createserver.asp)
+
+* The http.createServer() method turns your computer into an HTTP server.
+
+* The http.createServer() method creates an HTTP Server object.
+
+* The HTTP Server object can listen to ports on your computer and execute a function, a requestListener, each time a request is made.
+
+´´´
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.write('Hello World!');
+  res.end();
+}).listen(8080);
+´´´
+
+### [Node.js requestListener() Function](https://www.w3schools.com/nodejs/func_http_requestlistener.asp)
+**req = request**
+
+_Specifies a function to be executed every time the server gets a request. This function is called a requestListener, and handles request from the user, as well as response back to the user._
+
+_The **requestListener function** is the function that is executed each time the server gets a request._
+
+_The **requestListener function** is passed as a parameter to the http.createServer() method._
+
+_The **requestListener function** handles requests from the user, and also the response back to the user_
+
+### [Node.js IncomingMessage Object](https://www.w3schools.com/nodejs/obj_http_incomingmessage.asp)
+
+_The IncomingMessage object is passed as the first argument in the requestListener function_
+_The IncomingMessage object represents the request to the server._
+
+´´´
+var http = require('http');
+http.createServer(function (req, res) {
+  res.end(req.url);
+}).listen(8080);
+´´´
+
+#### IncomingMessage Methods and Properties
+
+|destroy()|	 
+|headers|Returns a key-value pair object containing header names and values|
+|httpVersion|Returns the HTTP version sent by the client|
+|method|Returns the request method|
+|rawHeaders|Returns an array of the request headers|
+|rawTrailers|Returns an array of the raw request trailer keys and values|
+|setTimeout()|Calls a specified function after a specified number of milliseconds|
+|statusCode|Returns the HTTP response status code|
+|socket|Returns the Socket object for the connection|
+|trailers|Returns an object containing the trailers|
+|url|Returns the request URL string|
