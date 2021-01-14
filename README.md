@@ -106,3 +106,6 @@ http.createServer(function (req, res) {
 * **socket**         _Returns the Socket object for the connection_
 * **trailers**       _Returns an object containing the trailers_
 * **url**            _Returns the request URL string_
+
+---
+⌨️ con ❤️ por [veroxcrown](https://github.com/veroxcrown) 😊
