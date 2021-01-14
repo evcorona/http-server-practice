@@ -2,7 +2,7 @@ const { log } = require('console')
 const http = require('http')
 
 const server = http.createServer((request, response) => {
-    response.write('HOLA MUNDO DESDE MI PRIMER SERVIDOR---')
+    response.write('HOLA MUNDO DESDE MI PRIMER SERVIDOR --- ')
     switch (request.method) {
         case "GET":
             response.end('OBTENDRAS UN RECURSO CUANDO NOS LLAMEN CON UN METODO GET')
