@@ -61,14 +61,14 @@ DELETE /clases
 
 * The HTTP Server object can listen to ports on your computer and execute a function, a requestListener, each time a request is made.
 
-´´´
+```
 var http = require('http');
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.write('Hello World!');
   res.end();
 }).listen(8080);
-´´´
+```
 
 ### [Node.js requestListener() Function](https://www.w3schools.com/nodejs/func_http_requestlistener.asp)
 **req = request**
@@ -86,23 +86,23 @@ _The **requestListener function** handles requests from the user, and also the r
 _The IncomingMessage object is passed as the first argument in the requestListener function_
 _The IncomingMessage object represents the request to the server._
 
-´´´
+```
 var http = require('http');
 http.createServer(function (req, res) {
   res.end(req.url);
 }).listen(8080);
-´´´
+```
 
 #### IncomingMessage Methods and Properties
 
-|destroy()|	 
-|headers|Returns a key-value pair object containing header names and values|
-|httpVersion|Returns the HTTP version sent by the client|
-|method|Returns the request method|
-|rawHeaders|Returns an array of the request headers|
-|rawTrailers|Returns an array of the raw request trailer keys and values|
-|setTimeout()|Calls a specified function after a specified number of milliseconds|
-|statusCode|Returns the HTTP response status code|
-|socket|Returns the Socket object for the connection|
-|trailers|Returns an object containing the trailers|
-|url|Returns the request URL string|
+|destroy()      |	                                                                    | 
+|headers        |Returns a key-value pair object containing header names and values     |
+|httpVersion    |Returns the HTTP version sent by the client                            |
+|method         |Returns the request method                                             |
+|rawHeaders     |Returns an array of the request headers                                |
+|rawTrailers    |Returns an array of the raw request trailer keys and values            |
+|setTimeout()   |Calls a specified function after a specified number of milliseconds    |
+|statusCode     |Returns the HTTP response status code                                  |
+|socket         |Returns the Socket object for the connection                           |
+|trailers       |Returns an object containing the trailers                              |
+|url            |Returns the request URL string                                         |
