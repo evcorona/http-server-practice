@@ -2,25 +2,25 @@ const { log } = require('console')
 const http = require('http')
 
 const server = http.createServer((request, response) => {
-    response.write('HOLA MUNDO DESDE MI PRIMER SERVIDOR --- ')
+    response.write('HOLA MUNDO DESDE MI PRIMER SERVIDOR ---> ')
     switch (request.method) {
         case "GET":
-            response.end('OBTENDRAS UN RECURSO CUANDO NOS LLAMEN CON UN METODO GET')
+            response.write('-- :D GET ---')
             break;
         case "POST":
-            response.end('OBTENDRAS UN RECURSO CUANDO NOS LLAMEN CON UN METODO POST')
+            response.write('-- :D POST ---')
             break;
         case "DELETE":
-            response.end('OBTENDRAS UN RECURSO CUANDO NOS LLAMEN CON UN METODO DELETE')
+            response.write('-- :D DELETE ---')
             break;
         case "PUT":
-            response.end('OBTENDRAS UN RECURSO CUANDO NOS LLAMEN CON UN METODO PUT')
+            response.write('-- :D PUT ---')
             break;
         case "PATCH":
-            response.end('OBTENDRAS UN RECURSO CUANDO NOS LLAMEN CON UN METODO PATCH')
+            response.write('-- :D PATCH ---')
             break;
     }
-    response.end()
+    response.end(' FIN RESPUESTA')
 })
 
 server.listen(8080, () => {
