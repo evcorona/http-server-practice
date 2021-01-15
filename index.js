@@ -1,26 +1,29 @@
-const { log } = require('console')
+//const { log } = require('console')
 const http = require('http')
 
 const server = http.createServer((request, response) => {
-    response.write('HOLA MUNDO DESDE MI PRIMER SERVIDOR ---> ')
-    switch (request.method) {
-        case "GET":
-            response.write('-- :D GET ---')
-            break;
-        case "POST":
-            response.write('-- :D POST ---')
-            break;
-        case "DELETE":
-            response.write('-- :D DELETE ---')
-            break;
-        case "PUT":
-            response.write('-- :D PUT ---')
-            break;
-        case "PATCH":
-            response.write('-- :D PATCH ---')
-            break;
+    console.log('url', request.url)
+
+    if (request.url === '/koders') {
+        switch (request.method) {
+            case "GET":
+                response.write('-- :D GET A KODERS ---')
+                break;
+            case "POST":
+                response.write('-- :D POST A KODERS ---')
+                break;
+            case "DELETE":
+                response.write('-- :D DELETE A KODERS ---')
+                break;
+            default:
+                response.write('-- :D NADA ---')
+                break;
+        }
     }
-    response.end(' FIN RESPUESTA')
+    else {
+        response.write(' ** Otra Ruta **')
+    }
+    response.end(' X')
 })
 
 server.listen(8080, () => {

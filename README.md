@@ -82,3 +82,70 @@ http.createServer(function (req, res) {
 
 ---
 ⌨️ con ❤️ por [veroxcrown](https://github.com/veroxcrown) 😊
+
+# PRACTICA 1
+```
+//const { log } = require('console')
+const http = require('http')
+
+const server = http.createServer((request, response) => {
+    console.log('url', request.url)
+    
+    response.write('HOLA MUNDO DESDE MI PRIMER SERVIDOR ---> ')
+    switch (request.method) {
+        case "GET"://const { log } = require('console')
+const http = require('http')
+
+const server = http.createServer((request, response) => {
+    console.log('url', request.url)
+    
+    response.write('HOLA MUNDO DESDE MI PRIMER SERVIDOR ---> ')
+    switch (request.method) {
+        case "GET":
+            response.write('-- :D OBTENDRÁS UN RECURSO ---')
+            break;
+        case "POST":
+            response.write('-- :D CREARÁS UN RECURSO ---')
+            break;
+        case "DELETE":
+            response.write('-- :D ELIMINARÁS UN RECURSO ---')
+            break;
+        default:
+            response.write('-- :D NADA ---')
+            break;
+    }
+    response.end(' FIN RESPUESTA')
+})
+
+server.listen(8080, () => {
+    console.log('servidor escuchando en puerto 8080')
+})
+
+// request - funcion que se va a ejecutar cuando el server reciba el request
+
+//practica
+//RESPONDER OBTENDRAS UN RECUSO CUANDO NIS LLAMEN CON UN METODO GET
+// RESPONDER CREARAS UN RECURSOCUANDO NOS LLAMEN CON UN METODO POST
+
+            response.write('-- :D CREARÁS UN RECURSO ---')
+            break;
+        case "DELETE":
+            response.write('-- :D ELIMINARÁS UN RECURSO ---')
+            break;
+        default:
+            response.write('-- :D NADA ---')
+            break;
+    }
+    response.end(' FIN RESPUESTA')
+})
+
+server.listen(8080, () => {
+    console.log('servidor escuchando en puerto 8080')
+})
+
+// request - funcion que se va a ejecutar cuando el server reciba el request
+
+//practica
+//RESPONDER OBTENDRAS UN RECUSO CUANDO NIS LLAMEN CON UN METODO GET
+// RESPONDER CREARAS UN RECURSOCUANDO NOS LLAMEN CON UN METODO POST
+```
